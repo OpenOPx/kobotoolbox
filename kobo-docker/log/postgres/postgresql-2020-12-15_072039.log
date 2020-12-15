@@ -1,0 +1,13 @@
+[2020-12-15 07:20:39 UTC] LOG:  database system was shut down at 2020-12-15 07:20:39 UTC
+[2020-12-15 07:20:39 UTC] LOG:  MultiXact member wraparound protections are now enabled
+[2020-12-15 07:20:39 UTC] LOG:  database system is ready to accept connections
+[2020-12-15 07:20:39 UTC] LOG:  autovacuum launcher started
+[2020-12-15 07:20:41 UTC] FATAL:  database "koboform" does not exist
+[2020-12-15 07:20:45 UTC] FATAL:  database "koboform" does not exist
+[2020-12-15 07:20:45 UTC] FATAL:  database "kobocat" does not exist
+[2020-12-15 07:20:48 UTC] LOG:  incomplete startup packet
+[2020-12-15 07:21:50 UTC] LOG:  received fast shutdown request
+[2020-12-15 07:21:50 UTC] LOG:  aborting any active transactions
+[2020-12-15 07:21:50 UTC] LOG:  autovacuum launcher shutting down
+[2020-12-15 07:21:50 UTC] LOG:  shutting down
+[2020-12-15 07:21:50 UTC] LOG:  database system is shut down

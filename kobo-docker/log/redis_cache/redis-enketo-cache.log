@@ -1,0 +1,82 @@
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.12 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6380
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 15 Dec 07:20:35.804 # Server started, Redis version 3.2.12
+1:M 15 Dec 07:20:35.804 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 15 Dec 07:20:35.804 * The server is now ready to accept connections on port 6380
+1:signal-handler (1608016910) Received SIGTERM scheduling shutdown...
+1:M 15 Dec 07:21:50.388 # User requested shutdown...
+1:M 15 Dec 07:21:50.388 * Saving the final RDB snapshot before exiting.
+1:M 15 Dec 07:21:50.391 * DB saved on disk
+1:M 15 Dec 07:21:50.391 * Removing the pid file.
+1:M 15 Dec 07:21:50.391 # Redis is now ready to exit, bye bye...
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.12 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6380
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 15 Dec 07:21:58.054 # Server started, Redis version 3.2.12
+1:M 15 Dec 07:21:58.054 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 15 Dec 07:21:58.054 * DB loaded from disk: 0.000 seconds
+1:M 15 Dec 07:21:58.054 * The server is now ready to accept connections on port 6380
+1:signal-handler (1608017496) Received SIGTERM scheduling shutdown...
+1:M 15 Dec 07:31:36.971 # User requested shutdown...
+1:M 15 Dec 07:31:36.971 * Saving the final RDB snapshot before exiting.
+1:M 15 Dec 07:31:36.975 * DB saved on disk
+1:M 15 Dec 07:31:36.975 * Removing the pid file.
+1:M 15 Dec 07:31:36.975 # Redis is now ready to exit, bye bye...
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.12 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6380
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 15 Dec 07:32:52.573 # Server started, Redis version 3.2.12
+1:M 15 Dec 07:32:52.573 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 15 Dec 07:32:52.573 * DB loaded from disk: 0.000 seconds
+1:M 15 Dec 07:32:52.573 * The server is now ready to accept connections on port 6380
+1:M 15 Dec 08:32:53.056 * 1 changes in 3600 seconds. Saving...
+1:M 15 Dec 08:32:53.057 * Background saving started by pid 225
+225:C 15 Dec 08:32:53.063 * DB saved on disk
+225:C 15 Dec 08:32:53.063 * RDB: 6 MB of memory used by copy-on-write
+1:M 15 Dec 08:32:53.158 * Background saving terminated with success

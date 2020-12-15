@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "k-icons";
+  src: url("../fonts/k-icons.1606897495149.woff2?19a5ccf7447cddb46a90bf6e70bab2d3") format("woff2"),
+url("../fonts/k-icons.1606897495149.woff?19a5ccf7447cddb46a90bf6e70bab2d3") format("woff"),
+url("../fonts/k-icons.1606897495149.ttf?19a5ccf7447cddb46a90bf6e70bab2d3") format("truetype"),
+url("../fonts/k-icons.1606897495149.eot?19a5ccf7447cddb46a90bf6e70bab2d3?#iefix") format("embedded-opentype"),
+url("../fonts/k-icons.1606897495149.svg?19a5ccf7447cddb46a90bf6e70bab2d3#k-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.k-icon,
+[class^="k-icon-"] {
+  font-family: "k-icons";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.k-icon::before,
+[class^="k-icon-"]::before,
+[class*=" k-icon-"]::before {
+  font-family: "k-icons" !important;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  /* For safety - reset parent styles, that can break glyph codes */
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.k-icon-active::before {content: "\f101";}
+.k-icon-add::before {content: "\f102";}
+.k-icon-alert::before {content: "\f103";}
+.k-icon-archived::before {content: "\f104";}
+.k-icon-arrow-back::before {content: "\f105";}
+.k-icon-arrow-first::before {content: "\f106";}
+.k-icon-arrow-last::before {content: "\f107";}
+.k-icon-arrow-next::before {content: "\f108";}
+.k-icon-attach::before {content: "\f109";}
+.k-icon-audio::before {content: "\f10a";}
+.k-icon-block::before {content: "\f10b";}
+.k-icon-camera::before {content: "\f10c";}
+.k-icon-cascading::before {content: "\f10d";}
+.k-icon-check::before {content: "\f10e";}
+.k-icon-clone::before {content: "\f10f";}
+.k-icon-close::before {content: "\f110";}
+.k-icon-comment-reply::before {content: "\f111";}
+.k-icon-comment::before {content: "\f112";}
+.k-icon-custom-reports::before {content: "\f113";}
+.k-icon-data-sync::before {content: "\f114";}
+.k-icon-date-and-time::before {content: "\f115";}
+.k-icon-date::before {content: "\f116";}
+.k-icon-deploy::before {content: "\f117";}
+.k-icon-download::before {content: "\f118";}
+.k-icon-drafts::before {content: "\f119";}
+.k-icon-edit::before {content: "\f11a";}
+.k-icon-email::before {content: "\f11b";}
+.k-icon-expand::before {content: "\f11c";}
+.k-icon-featured::before {content: "\f11d";}
+.k-icon-filter-alt::before {content: "\f11e";}
+.k-icon-filter::before {content: "\f11f";}
+.k-icon-folder-move-to::before {content: "\f120";}
+.k-icon-folder-public::before {content: "\f121";}
+.k-icon-folder-shared::before {content: "\f122";}
+.k-icon-folder::before {content: "\f123";}
+.k-icon-follow::before {content: "\f124";}
+.k-icon-form-overview::before {content: "\f125";}
+.k-icon-form::before {content: "\f126";}
+.k-icon-forms::before {content: "\f127";}
+.k-icon-forum::before {content: "\f128";}
+.k-icon-github::before {content: "\f129";}
+.k-icon-globe-alt::before {content: "\f12a";}
+.k-icon-globe::before {content: "\f12b";}
+.k-icon-gps::before {content: "\f12c";}
+.k-icon-graph-settings::before {content: "\f12d";}
+.k-icon-grid::before {content: "\f12e";}
+.k-icon-group::before {content: "\f12f";}
+.k-icon-handle::before {content: "\f130";}
+.k-icon-heatmap::before {content: "\f131";}
+.k-icon-help-articles::before {content: "\f132";}
+.k-icon-help::before {content: "\f133";}
+.k-icon-image-file::before {content: "\f134";}
+.k-icon-information::before {content: "\f135";}
+.k-icon-instagram::before {content: "\f136";}
+.k-icon-intercom::before {content: "\f137";}
+.k-icon-kobo::before {content: "\f138";}
+.k-icon-language-default::before {content: "\f139";}
+.k-icon-language::before {content: "\f13a";}
+.k-icon-layer::before {content: "\f13b";}
+.k-icon-library::before {content: "\f13c";}
+.k-icon-link-anyone::before {content: "\f13d";}
+.k-icon-link-off::before {content: "\f13e";}
+.k-icon-link::before {content: "\f13f";}
+.k-icon-linkedin::before {content: "\f140";}
+.k-icon-location::before {content: "\f141";}
+.k-icon-lock::before {content: "\f142";}
+.k-icon-logout::before {content: "\f143";}
+.k-icon-map-view::before {content: "\f144";}
+.k-icon-media-files::before {content: "\f145";}
+.k-icon-menu::before {content: "\f146";}
+.k-icon-minus::before {content: "\f147";}
+.k-icon-mobile-form::before {content: "\f148";}
+.k-icon-more::before {content: "\f149";}
+.k-icon-next::before {content: "\f14a";}
+.k-icon-notification::before {content: "\f14b";}
+.k-icon-number::before {content: "\f14c";}
+.k-icon-pdf::before {content: "\f14d";}
+.k-icon-photo-gallery::before {content: "\f14e";}
+.k-icon-pins::before {content: "\f14f";}
+.k-icon-plus::before {content: "\f150";}
+.k-icon-prev::before {content: "\f151";}
+.k-icon-print::before {content: "\f152";}
+.k-icon-projects::before {content: "\f153";}
+.k-icon-public-collection::before {content: "\f154";}
+.k-icon-question::before {content: "\f155";}
+.k-icon-questions-block::before {content: "\f156";}
+.k-icon-remove::before {content: "\f157";}
+.k-icon-rename::before {content: "\f158";}
+.k-icon-replace-all::before {content: "\f159";}
+.k-icon-replace::before {content: "\f15a";}
+.k-icon-report-add-to-template::before {content: "\f15b";}
+.k-icon-report-menu::before {content: "\f15c";}
+.k-icon-report-template::before {content: "\f15d";}
+.k-icon-report::before {content: "\f15e";}
+.k-icon-restore::before {content: "\f15f";}
+.k-icon-search::before {content: "\f160";}
+.k-icon-select-many::before {content: "\f161";}
+.k-icon-select-one::before {content: "\f162";}
+.k-icon-settings::before {content: "\f163";}
+.k-icon-share::before {content: "\f164";}
+.k-icon-subscribe::before {content: "\f165";}
+.k-icon-table::before {content: "\f166";}
+.k-icon-tag::before {content: "\f167";}
+.k-icon-template::before {content: "\f168";}
+.k-icon-text::before {content: "\f169";}
+.k-icon-time::before {content: "\f16a";}
+.k-icon-trash::before {content: "\f16b";}
+.k-icon-twitter::before {content: "\f16c";}
+.k-icon-upload::before {content: "\f16d";}
+.k-icon-video::before {content: "\f16e";}
+.k-icon-view-all-alt::before {content: "\f16f";}
+.k-icon-view-all::before {content: "\f170";}
+.k-icon-view-no::before {content: "\f171";}
+.k-icon-view::before {content: "\f172";}
+.k-icon-webform::before {content: "\f173";}
+.k-icon-xls-file::before {content: "\f174";}
+.k-icon-xml-file::before {content: "\f175";}

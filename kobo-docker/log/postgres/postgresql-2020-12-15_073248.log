@@ -1,0 +1,11 @@
+[2020-12-15 07:32:48 UTC] LOG:  database system was shut down at 2020-12-15 07:31:36 UTC
+[2020-12-15 07:32:48 UTC] LOG:  MultiXact member wraparound protections are now enabled
+[2020-12-15 07:32:48 UTC] LOG:  database system is ready to accept connections
+[2020-12-15 07:32:48 UTC] LOG:  autovacuum launcher started
+[2020-12-15 07:32:49 UTC] FATAL:  role "postgres" does not exist
+[2020-12-15 07:32:49 UTC] FATAL:  role "root" does not exist
+[2020-12-15 07:32:49 UTC] LOG:  received fast shutdown request
+[2020-12-15 07:32:49 UTC] LOG:  aborting any active transactions
+[2020-12-15 07:32:49 UTC] LOG:  autovacuum launcher shutting down
+[2020-12-15 07:32:49 UTC] LOG:  shutting down
+[2020-12-15 07:32:49 UTC] LOG:  database system is shut down

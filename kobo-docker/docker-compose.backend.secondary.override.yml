@@ -1,0 +1,15 @@
+# For public, HTTPS servers.
+version: '2.2'
+
+services:
+  postgres:
+    extends:
+      file: docker-compose.backend.template.yml
+      service: postgres
+    volumes:
+      - ../kobo-env/postgres/secondary/postgres.conf:/kobo-docker-scripts/secondary/postgres.conf
+    ports:
+      - 5431:5432
+    extra_hosts:
+      - postgres.kobo.private:10.128.0.27
+      - primary.postgres.kobo.private:10.128.0.27

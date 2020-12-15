@@ -1,0 +1,9 @@
+2020/12/15 07:20:48 [emerg] 1#1: host not found in upstream "kpi" in /etc/nginx/includes/kpi_proxy_pass.conf:4
+2020/12/15 07:20:49 [emerg] 1#1: host not found in upstream "kpi" in /etc/nginx/includes/kpi_proxy_pass.conf:4
+2020/12/15 07:20:50 [emerg] 1#1: host not found in upstream "kpi" in /etc/nginx/includes/kpi_proxy_pass.conf:4
+2020/12/15 07:20:51 [emerg] 1#1: host not found in upstream "kpi" in /etc/nginx/includes/kpi_proxy_pass.conf:4
+2020/12/15 07:20:53 [emerg] 1#1: host not found in upstream "kpi" in /etc/nginx/includes/kpi_proxy_pass.conf:4
+2020/12/15 07:20:55 [emerg] 1#1: host not found in upstream "kpi" in /etc/nginx/includes/kpi_proxy_pass.conf:4
+2020/12/15 07:20:59 [emerg] 1#1: host not found in upstream "kpi" in /etc/nginx/includes/kpi_proxy_pass.conf:4
+2020/12/15 07:21:06 [emerg] 1#1: host not found in upstream "kpi" in /etc/nginx/includes/kpi_proxy_pass.conf:4
+2020/12/15 07:21:20 [emerg] 1#1: host not found in upstream "kpi" in /etc/nginx/includes/kpi_proxy_pass.conf:4

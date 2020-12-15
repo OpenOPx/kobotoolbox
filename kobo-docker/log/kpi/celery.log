@@ -1,0 +1,14 @@
+[2020-12-15 07:22:23,835: INFO/MainProcess] Connected to redis://:**@redis-main.kobo.private:6379/1
+[2020-12-15 07:22:23,846: INFO/MainProcess] mingle: searching for neighbors
+[2020-12-15 07:22:24,876: INFO/MainProcess] mingle: sync with 1 nodes
+[2020-12-15 07:22:24,876: INFO/MainProcess] mingle: sync complete
+[2020-12-15 07:22:24,900: WARNING/MainProcess] /opt/venv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-12-15 07:22:24,900: INFO/MainProcess] kpi_main_worker@kpi ready.
+[2020-12-15 07:33:10,472: INFO/MainProcess] Connected to redis://:**@redis-main.kobo.private:6379/1
+[2020-12-15 07:33:10,488: INFO/MainProcess] mingle: searching for neighbors
+[2020-12-15 07:33:11,520: INFO/MainProcess] mingle: all alone
+[2020-12-15 07:33:11,567: WARNING/MainProcess] /opt/venv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-12-15 07:33:11,568: INFO/MainProcess] kpi_main_worker@kpi ready.
+[2020-12-15 08:22:14,276: INFO/MainProcess] missed heartbeat from sync_kobocat_xforms_worker@kpi
