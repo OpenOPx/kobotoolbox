@@ -140,3 +140,159 @@ server {
         proxy_redirect off;
     }
 }
+server {
+    listen 80;
+    server_name kf.variamos.com;
+
+    include /etc/nginx/includes/server_directive_common.conf;
+
+    location ~ ^/forms/(.*) {
+        return 301 /$1;
+    }
+
+    access_log  /var/log/nginx/kpi.access.log with_host;
+    error_log   /var/log/nginx/kpi.error.log;
+
+    location /static {
+        alias /srv/www/kpi;
+
+        # gzip configs from here
+        # http://stackoverflow.com/a/12644530/3088435
+        gzip on;
+        gzip_disable "msie6";
+        gzip_comp_level 6;
+        gzip_min_length 1100;
+        gzip_buffers 16 8k;
+        gzip_proxied any;
+        gzip_types
+            text/plain
+            text/css
+            text/js
+            text/xml
+            text/javascript
+            application/javascript
+            application/x-javascript
+            application/json
+            application/xml
+            application/xml+rss;
+    }
+
+    error_page 418 = /static/html/Offline.html;
+
+    location / {
+        # Proxy through uWSGI.
+
+
+        # Debug proxying directly to container.
+        include /etc/nginx/includes/kpi_proxy_pass.conf;
+    }
+}
+server {
+    listen 80;
+    server_name kc.variamos.com;
+    access_log  /var/log/nginx/kobocat.access.log with_host;
+    error_log   /var/log/nginx/kobocat.error.log;
+
+    include /etc/nginx/includes/server_directive_common.conf;
+
+    location / {
+        # Proxy through uWSGI.
+
+
+        # Debug proxying directly to container.
+        include /etc/nginx/includes/kobocat_proxy_pass.conf;
+    }
+
+    location /static {
+        alias /srv/www/kobocat;
+    }
+
+    # media files
+    location /protected/ {
+        internal;
+        alias /media/;
+    }
+
+    location ~ ^/protected-s3/(.*)$ {
+        # Allow internal requests only, i.e. return a 404 to any client who
+        # tries to access this location directly
+        internal;
+        # Name resolution won't work at all without specifying a resolver here.
+        # Configuring a validity period is useful for overriding Amazon's very
+        # short (5-second?) TTLs.
+        resolver 8.8.8.8 8.8.4.4 valid=300s;
+        resolver_timeout 10s;
+        # Everything that S3 needs is in the URL; don't pass any headers or
+        # body content that the client may have sent
+        proxy_pass_request_body off;
+        proxy_pass_request_headers off;
+
+        # Stream the response to the client instead of trying to read it all at
+        # once, which would potentially use disk space
+        proxy_buffering off;
+
+        # Don't leak S3 headers to the client. List retrieved from:
+        # https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonResponseHeaders.html
+        proxy_hide_header x-amz-delete-marker;
+        proxy_hide_header x-amz-id-2;
+        proxy_hide_header x-amz-request-id;
+        proxy_hide_header x-amz-version-id;
+
+        # S3 will complain if `$1` contains non-encoded special characters.
+        # KoBoCAT must encode twice to make sure `$1` is still encoded after
+        # NGINX's automatic URL decoding.
+        proxy_pass $1;
+    }
+}
+server {
+    listen 80;
+    server_name ee.variamos.com;
+
+    resolver 8.8.4.4 8.8.8.8 valid=300s;
+    resolver_timeout 10s;
+
+    include /etc/nginx/includes/server_directive_common.conf;
+
+    # add_header Strict-Transport-Security max-age=63072000;
+    # add_header X-Frame-Options DENY;
+    add_header X-Content-Type-Options nosniff;
+
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $http_x_forwarded_proto; # Needs ELB protocol
+
+    access_log  /var/log/nginx/enketo_express.access.log with_host;
+    error_log   /var/log/nginx/enketo_express.error.log;
+
+    location / {
+        proxy_pass  http://enketo_express:8005/;
+        proxy_redirect off;
+    }
+}
+server {
+    listen 80;
+    server_name opx.variamos.com;
+
+    location / {
+        proxy_pass http://104.155.149.1:8000/;
+    }   
+}
+server {
+    listen 80;
+    server_name tmf.variamos.com;
+    resolver 8.8.4.4 8.8.8.8 valid=300s;
+    resolver_timeout 10s;
+    location / {
+        proxy_pass http://tm_frontend:80/;
+    }   
+}
+server {
+    listen 80;
+    server_name tmb.variamos.com;
+    resolver 8.8.4.4 8.8.8.8 valid=300s;
+    resolver_timeout 10s;
+    location / {
+        proxy_pass http://tm_backend:5000/;
+    }   
+}

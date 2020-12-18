@@ -5,7 +5,7 @@
 # Choose between http or https
 PUBLIC_REQUEST_SCHEME=http
 # The publicly-accessible domain where your KoBo Toolbox instance will be reached (e.g. example.com).
-PUBLIC_DOMAIN_NAME=kobo.local
+PUBLIC_DOMAIN_NAME=variamos.com
 # The private domain used in docker network. Useful for communication between containers without passing through
 # a load balancer. No need to be resolved by a public DNS.
 INTERNAL_DOMAIN_NAME=docker.internal

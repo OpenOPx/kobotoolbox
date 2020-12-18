@@ -1,0 +1,54 @@
+[2020-12-17 08:11:43 UTC] LOG:  database system was shut down at 2020-12-17 08:11:42 UTC
+[2020-12-17 08:11:43 UTC] LOG:  MultiXact member wraparound protections are now enabled
+[2020-12-17 08:11:43 UTC] LOG:  autovacuum launcher started
+[2020-12-17 08:11:43 UTC] LOG:  database system is ready to accept connections
+[2020-12-17 08:11:54 UTC] LOG:  incomplete startup packet
+[2020-12-17 08:11:54 UTC] ERROR:  database "koboform" already exists
+[2020-12-17 08:11:54 UTC] STATEMENT:  CREATE DATABASE "koboform" OWNER "kobo";
+[2020-12-17 08:11:54 UTC] LOG:  incomplete startup packet
+[2020-12-17 08:11:54 UTC] ERROR:  database "kobocat" already exists
+[2020-12-17 08:11:54 UTC] STATEMENT:  CREATE DATABASE "kobocat" OWNER "kobo";
+[2020-12-17 09:38:54 UTC] ERROR:  duplicate key value violates unique constraint "logger_xform_user_id_45289a11b89d131b_uniq"
+[2020-12-17 09:38:54 UTC] DETAIL:  Key (user_id, id_string)=(1, aEPEj86LEemXMy5PJtq4rF) already exists.
+[2020-12-17 09:38:54 UTC] STATEMENT:  INSERT INTO "logger_xform" ("xls", "json", "description", "xml", "user_id", "require_auth", "shared", "shared_data", "downloadable", "allows_sms", "encrypted", "sms_id_string", "id_string", "title", "date_created", "date_modified", "last_submission_time", "has_start_time", "uuid", "instances_with_geopoints", "num_of_submissions", "has_kpi_hooks", "kpi_asset_uid") VALUES ('admin/xls/aEPEj86LEemXMy5PJtq4rF_xbvaMUi.xls', '{"default_language": "default", "id_string": "aEPEj86LEemXMy5PJtq4rF", "children": [{"name": "start", "type": "start"}, {"name": "end", "type": "end"}, {"children": [{"name": "si", "label": "Si"}, {"name": "no", "label": "No"}], "name": "_Esto_es_una_pregunta", "label": "\u00bfEsto es una pregunta?", "bind": {"required": "false"}, "type": "select all that apply"}, {"name": "__version__", "bind": {"calculate": "''vRhF6phpxa3fwUbCdvyJHV''"}, "type": "calculate"}, {"control": {"bodyless": true}, "children": [{"name": "instanceID", "bind": {"readonly": "true()", "calculate": "concat(''uuid:'', uuid())"}, "type": "calculate"}], "name": "meta", "type": "group"}], "version": "vRhF6phpxa3fwUbCdvyJHV", "type": "survey", "name": "aEPEj86LEemXMy5PJtq4rF", "sms_keyword": "aEPEj86LEemXMy5PJtq4rF", "title": "CuentaDeVecesQueHaFuncionadoPDG"}', 'CuentaDeVecesQueHaFuncionadoPDG', '<?xml version="1.0" encoding="utf-8"?>
+	<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	  <h:head>
+	    <h:title>CuentaDeVecesQueHaFuncionadoPDG</h:title>
+	    <model>
+	      <instance>
+	        <aEPEj86LEemXMy5PJtq4rF id="aEPEj86LEemXMy5PJtq4rF" version="vRhF6phpxa3fwUbCdvyJHV">
+	          <formhub>
+	            <uuid/>
+	          </formhub>
+	          <start/>
+	          <end/>
+	          <_Esto_es_una_pregunta/>
+	          <__version__/>
+	          <meta>
+	            <instanceID/>
+	          </meta>
+	        </aEPEj86LEemXMy5PJtq4rF>
+	      </instance>
+	      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/aEPEj86LEemXMy5PJtq4rF/start" type="dateTime"/>
+	      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/aEPEj86LEemXMy5PJtq4rF/end" type="dateTime"/>
+	      <bind nodeset="/aEPEj86LEemXMy5PJtq4rF/_Esto_es_una_pregunta" required="false()" type="select"/>
+	      <bind calculate="''vRhF6phpxa3fwUbCdvyJHV''" nodeset="/aEPEj86LEemXMy5PJtq4rF/__version__" type="string"/>
+	      <bind calculate="concat(''uuid:'', uuid())" nodeset="/aEPEj86LEemXMy5PJtq4rF/meta/instanceID" readonly="true()" type="string"/>
+	      <bind calculate="''1f9d0b0525ce45d9ac0a5b333bee2232''" nodeset="/aEPEj86LEemXMy5PJtq4rF/formhub/uuid" type="string"/>
+	    </model>
+	  </h:head>
+	  <h:body>
+	    <select ref="/aEPEj86LEemXMy5PJtq4rF/_Esto_es_una_pregunta">
+	      <label>¿Esto es una pregunta?</label>
+	      <item>
+	        <label>Si</label>
+	        <value>si</value>
+	      </item>
+	      <item>
+	        <label>No</label>
+	        <value>no</value>
+	      </item>
+	    </select>
+	  </h:body>
+	</h:html>
+	', 1, false, false, false, true, false, false, 'aEPEj86LEemXMy5PJtq4rF', 'aEPEj86LEemXMy5PJtq4rF', 'CuentaDeVecesQueHaFuncionadoPDG', '2020-12-17T09:38:54.549946+00:00'::timestamptz, '2020-12-17T09:38:54.550044+00:00'::timestamptz, NULL, true, '1f9d0b0525ce45d9ac0a5b333bee2232', false, 0, 0, NULL) RETURNING "logger_xform"."id"

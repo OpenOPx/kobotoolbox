@@ -16,3 +16,104 @@
 [2020-12-15 09:00:00,069: INFO/ForkPoolWorker-5] Task celery.backend_cleanup[0764cd09-b085-4384-971c-7b03b93f4bca] succeeded in 0.034215407999s: None
 [2020-12-15 13:33:42,146: INFO/MainProcess] Received task: onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[4cc95ebe-974d-4804-9d8c-4ca5df43dd1e]  
 [2020-12-15 13:33:42,163: INFO/ForkPoolWorker-4] Task onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[4cc95ebe-974d-4804-9d8c-4ca5df43dd1e] succeeded in 0.0154781410019s: None
+[2020-12-15 19:33:42,146: INFO/MainProcess] Received task: onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[1ee71b16-8e9c-49d2-b5a5-0c54d936567f]  
+[2020-12-15 19:33:42,162: INFO/ForkPoolWorker-3] Task onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[1ee71b16-8e9c-49d2-b5a5-0c54d936567f] succeeded in 0.0143210899987s: None
+[2020-12-16 01:33:42,151: INFO/MainProcess] Received task: onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[6bd45ff0-0c93-4699-9d0d-7a5e851afd28]  
+[2020-12-16 01:33:42,164: INFO/ForkPoolWorker-5] Task onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[6bd45ff0-0c93-4699-9d0d-7a5e851afd28] succeeded in 0.0123991300061s: None
+[2020-12-16 07:33:42,152: INFO/MainProcess] Received task: onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[d290a2ed-8e59-41ae-962e-031e76d22527]  
+[2020-12-16 07:33:42,164: INFO/ForkPoolWorker-4] Task onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[d290a2ed-8e59-41ae-962e-031e76d22527] succeeded in 0.00992502098961s: None
+[2020-12-16 09:00:00,006: INFO/MainProcess] Received task: celery.backend_cleanup[2ef01a02-1f6b-4fb5-b100-f1767312156e]  
+[2020-12-16 09:00:00,009: INFO/ForkPoolWorker-3] Task celery.backend_cleanup[2ef01a02-1f6b-4fb5-b100-f1767312156e] succeeded in 0.00128035299713s: None
+[2020-12-16 13:33:42,152: INFO/MainProcess] Received task: onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[612a88d3-dbcc-4256-b385-322a42566259]  
+[2020-12-16 13:33:42,161: INFO/ForkPoolWorker-5] Task onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[612a88d3-dbcc-4256-b385-322a42566259] succeeded in 0.00816722601303s: None
+[2020-12-16 19:33:42,153: INFO/MainProcess] Received task: onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[620d8b7c-3d26-4865-a357-223693604b9f]  
+[2020-12-16 19:33:42,162: INFO/ForkPoolWorker-4] Task onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[620d8b7c-3d26-4865-a357-223693604b9f] succeeded in 0.00798356099403s: None
+[2020-12-17 01:33:42,155: INFO/MainProcess] Received task: onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[d96cde4e-53f2-4a79-bc7f-d2ec141fb36d]  
+[2020-12-17 01:33:42,166: INFO/ForkPoolWorker-3] Task onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[d96cde4e-53f2-4a79-bc7f-d2ec141fb36d] succeeded in 0.00966792702093s: None
+[2020-12-17 02:18:38,561: INFO/MainProcess] Connected to redis://:**@redis-main.kobo.private:6379/2
+[2020-12-17 02:18:38,574: INFO/MainProcess] mingle: searching for neighbors
+[2020-12-17 02:18:39,602: INFO/MainProcess] mingle: all alone
+[2020-12-17 02:18:39,618: WARNING/MainProcess] /usr/local/lib/python2.7/dist-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2020-12-17 02:18:39,619: INFO/MainProcess] kobocat_main_worker@kobocat ready.
+[2020-12-17 03:05:28,941: INFO/MainProcess] Connected to redis://:**@redis-main.kobo.private:6379/2
+[2020-12-17 03:05:28,953: INFO/MainProcess] mingle: searching for neighbors
+[2020-12-17 03:05:29,977: INFO/MainProcess] mingle: all alone
+[2020-12-17 03:05:29,995: WARNING/MainProcess] /usr/local/lib/python2.7/dist-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2020-12-17 03:05:29,996: INFO/MainProcess] kobocat_main_worker@kobocat ready.
+[2020-12-17 03:30:24,498: INFO/MainProcess] Connected to redis://:**@redis-main.kobo.private:6379/2
+[2020-12-17 03:30:24,512: INFO/MainProcess] mingle: searching for neighbors
+[2020-12-17 03:30:25,537: INFO/MainProcess] mingle: all alone
+[2020-12-17 03:30:25,554: WARNING/MainProcess] /usr/local/lib/python2.7/dist-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2020-12-17 03:30:25,555: INFO/MainProcess] kobocat_main_worker@kobocat ready.
+[2020-12-17 03:48:57,785: INFO/MainProcess] Connected to redis://:**@redis-main.kobo.private:6379/2
+[2020-12-17 03:48:57,796: INFO/MainProcess] mingle: searching for neighbors
+[2020-12-17 03:48:58,820: INFO/MainProcess] mingle: all alone
+[2020-12-17 03:48:58,838: WARNING/MainProcess] /usr/local/lib/python2.7/dist-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2020-12-17 03:48:58,839: INFO/MainProcess] kobocat_main_worker@kobocat ready.
+[2020-12-17 04:22:02,027: INFO/MainProcess] Connected to redis://:**@redis-main.kobo.private:6379/2
+[2020-12-17 04:22:02,037: INFO/MainProcess] mingle: searching for neighbors
+[2020-12-17 04:22:03,060: INFO/MainProcess] mingle: all alone
+[2020-12-17 04:22:03,081: WARNING/MainProcess] /usr/local/lib/python2.7/dist-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2020-12-17 04:22:03,081: INFO/MainProcess] kobocat_main_worker@kobocat ready.
+[2020-12-17 05:16:37,490: INFO/MainProcess] Connected to redis://:**@redis-main.kobo.private:6379/2
+[2020-12-17 05:16:37,500: INFO/MainProcess] mingle: searching for neighbors
+[2020-12-17 05:16:38,526: INFO/MainProcess] mingle: all alone
+[2020-12-17 05:16:38,545: WARNING/MainProcess] /usr/local/lib/python2.7/dist-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2020-12-17 05:16:38,545: INFO/MainProcess] kobocat_main_worker@kobocat ready.
+[2020-12-17 05:39:21,679: INFO/MainProcess] Connected to redis://:**@redis-main.kobo.private:6379/2
+[2020-12-17 05:39:21,690: INFO/MainProcess] mingle: searching for neighbors
+[2020-12-17 05:39:22,717: INFO/MainProcess] mingle: all alone
+[2020-12-17 05:39:22,736: WARNING/MainProcess] /usr/local/lib/python2.7/dist-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2020-12-17 05:39:22,736: INFO/MainProcess] kobocat_main_worker@kobocat ready.
+[2020-12-17 05:58:22,393: INFO/MainProcess] Connected to redis://:**@redis-main.kobo.private:6379/2
+[2020-12-17 05:58:22,408: INFO/MainProcess] mingle: searching for neighbors
+[2020-12-17 05:58:23,434: INFO/MainProcess] mingle: all alone
+[2020-12-17 05:58:23,453: WARNING/MainProcess] /usr/local/lib/python2.7/dist-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2020-12-17 05:58:23,454: INFO/MainProcess] kobocat_main_worker@kobocat ready.
+[2020-12-17 06:09:01,308: INFO/MainProcess] Connected to redis://:**@redis-main.kobo.private:6379/2
+[2020-12-17 06:09:01,318: INFO/MainProcess] mingle: searching for neighbors
+[2020-12-17 06:09:02,342: INFO/MainProcess] mingle: all alone
+[2020-12-17 06:09:02,360: WARNING/MainProcess] /usr/local/lib/python2.7/dist-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2020-12-17 06:09:02,361: INFO/MainProcess] kobocat_main_worker@kobocat ready.
+[2020-12-17 06:26:11,939: INFO/MainProcess] Connected to redis://:**@redis-main.kobo.private:6379/2
+[2020-12-17 06:26:11,952: INFO/MainProcess] mingle: searching for neighbors
+[2020-12-17 06:26:12,976: INFO/MainProcess] mingle: all alone
+[2020-12-17 06:26:12,991: WARNING/MainProcess] /usr/local/lib/python2.7/dist-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2020-12-17 06:26:12,991: INFO/MainProcess] kobocat_main_worker@kobocat ready.
+[2020-12-17 07:33:42,195: INFO/MainProcess] Received task: onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[58037615-eb06-4384-b878-d47d6c2e6484]  
+[2020-12-17 07:33:42,249: INFO/ForkPoolWorker-1] Task onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[58037615-eb06-4384-b878-d47d6c2e6484] succeeded in 0.0495573950175s: None
+[2020-12-17 08:12:43,192: INFO/MainProcess] Connected to redis://:**@redis-main.kobo.private:6379/2
+[2020-12-17 08:12:43,212: INFO/MainProcess] mingle: searching for neighbors
+[2020-12-17 08:12:44,243: INFO/MainProcess] mingle: all alone
+[2020-12-17 08:12:44,260: WARNING/MainProcess] /usr/local/lib/python2.7/dist-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2020-12-17 08:12:44,260: INFO/MainProcess] kobocat_main_worker@kobocat ready.
+[2020-12-17 09:00:00,060: INFO/MainProcess] Received task: celery.backend_cleanup[45b2f6ad-ed0d-4275-b025-6c5b7332a9a9]  
+[2020-12-17 09:00:00,103: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[45b2f6ad-ed0d-4275-b025-6c5b7332a9a9] succeeded in 0.0341902599903s: None
+[2020-12-17 13:33:42,165: INFO/MainProcess] Received task: onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[dbaf8e5e-e61b-40cb-869e-d8691155edfb]  
+[2020-12-17 13:33:42,225: INFO/ForkPoolWorker-5] Task onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[dbaf8e5e-e61b-40cb-869e-d8691155edfb] succeeded in 0.0501861519879s: None
+[2020-12-17 19:33:42,160: INFO/MainProcess] Received task: onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[7f4cb5da-80e9-44e3-b41a-f8440ac41e1b]  
+[2020-12-17 19:33:42,198: INFO/ForkPoolWorker-3] Task onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[7f4cb5da-80e9-44e3-b41a-f8440ac41e1b] succeeded in 0.0317558099923s: None
+[2020-12-18 01:33:42,166: INFO/MainProcess] Received task: onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[c0fea68d-3b6e-49ea-92fc-4956fef989da]  
+[2020-12-18 01:33:42,209: INFO/ForkPoolWorker-2] Task onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed[c0fea68d-3b6e-49ea-92fc-4956fef989da] succeeded in 0.0359206689755s: None

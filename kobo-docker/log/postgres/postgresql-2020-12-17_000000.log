@@ -1,0 +1,5 @@
+[2020-12-17 02:17:26 UTC] LOG:  received fast shutdown request
+[2020-12-17 02:17:26 UTC] LOG:  aborting any active transactions
+[2020-12-17 02:17:26 UTC] LOG:  autovacuum launcher shutting down
+[2020-12-17 02:17:26 UTC] LOG:  shutting down
+[2020-12-17 02:17:26 UTC] LOG:  database system is shut down
