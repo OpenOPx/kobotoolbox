@@ -1,1 +1,99 @@
 [2020-12-18 00:28:17 UTC] LOG:  incomplete startup packet
+[2020-12-18 04:01:44 UTC] ERROR:  duplicate key value violates unique constraint "logger_xform_user_id_45289a11b89d131b_uniq"
+[2020-12-18 04:01:44 UTC] DETAIL:  Key (user_id, id_string)=(1, afsxpnkGig27GcjHHSyij3) already exists.
+[2020-12-18 04:01:44 UTC] STATEMENT:  INSERT INTO "logger_xform" ("xls", "json", "description", "xml", "user_id", "require_auth", "shared", "shared_data", "downloadable", "allows_sms", "encrypted", "sms_id_string", "id_string", "title", "date_created", "date_modified", "last_submission_time", "has_start_time", "uuid", "instances_with_geopoints", "num_of_submissions", "has_kpi_hooks", "kpi_asset_uid") VALUES ('admin/xls/afsxpnkGig27GcjHHSyij3_rwFb90F.xls', '{"default_language": "default", "id_string": "afsxpnkGig27GcjHHSyij3", "children": [{"name": "start", "type": "start"}, {"name": "end", "type": "end"}, {"children": [{"name": "si", "label": "Si"}, {"name": "no", "label": "No"}], "name": "Ya_hicieron_PDG", "label": "Ya hicieron PDG", "bind": {"required": "false"}, "type": "select all that apply"}, {"name": "__version__", "bind": {"calculate": "''vYfQ7CKgqosQC8PUvwuxth''"}, "type": "calculate"}, {"control": {"bodyless": true}, "children": [{"name": "instanceID", "bind": {"readonly": "true()", "calculate": "concat(''uuid:'', uuid())"}, "type": "calculate"}], "name": "meta", "type": "group"}], "version": "vYfQ7CKgqosQC8PUvwuxth", "type": "survey", "name": "afsxpnkGig27GcjHHSyij3", "sms_keyword": "afsxpnkGig27GcjHHSyij3", "title": "Analisamesta"}', 'Analisamesta', '<?xml version="1.0" encoding="utf-8"?>
+	<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	  <h:head>
+	    <h:title>Analisamesta</h:title>
+	    <model>
+	      <instance>
+	        <afsxpnkGig27GcjHHSyij3 id="afsxpnkGig27GcjHHSyij3" version="vYfQ7CKgqosQC8PUvwuxth">
+	          <formhub>
+	            <uuid/>
+	          </formhub>
+	          <start/>
+	          <end/>
+	          <Ya_hicieron_PDG/>
+	          <__version__/>
+	          <meta>
+	            <instanceID/>
+	          </meta>
+	        </afsxpnkGig27GcjHHSyij3>
+	      </instance>
+	      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/afsxpnkGig27GcjHHSyij3/start" type="dateTime"/>
+	      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/afsxpnkGig27GcjHHSyij3/end" type="dateTime"/>
+	      <bind nodeset="/afsxpnkGig27GcjHHSyij3/Ya_hicieron_PDG" required="false()" type="select"/>
+	      <bind calculate="''vYfQ7CKgqosQC8PUvwuxth''" nodeset="/afsxpnkGig27GcjHHSyij3/__version__" type="string"/>
+	      <bind calculate="concat(''uuid:'', uuid())" nodeset="/afsxpnkGig27GcjHHSyij3/meta/instanceID" readonly="true()" type="string"/>
+	      <bind calculate="''77d36e6bebb44cb39a3a7298f10757fc''" nodeset="/afsxpnkGig27GcjHHSyij3/formhub/uuid" type="string"/>
+	    </model>
+	  </h:head>
+	  <h:body>
+	    <select ref="/afsxpnkGig27GcjHHSyij3/Ya_hicieron_PDG">
+	      <label>Ya hicieron PDG</label>
+	      <item>
+	        <label>Si</label>
+	        <value>si</value>
+	      </item>
+	      <item>
+	        <label>No</label>
+	        <value>no</value>
+	      </item>
+	    </select>
+	  </h:body>
+	</h:html>
+	', 1, false, false, false, true, false, false, 'afsxpnkGig27GcjHHSyij3', 'afsxpnkGig27GcjHHSyij3', 'Analisamesta', '2020-12-18T04:01:44.161817+00:00'::timestamptz, '2020-12-18T04:01:44.161904+00:00'::timestamptz, NULL, true, '77d36e6bebb44cb39a3a7298f10757fc', false, 0, 0, NULL) RETURNING "logger_xform"."id"
+[2020-12-18 04:23:01 UTC] ERROR:  duplicate key value violates unique constraint "logger_xform_user_id_45289a11b89d131b_uniq"
+[2020-12-18 04:23:01 UTC] DETAIL:  Key (user_id, id_string)=(1, anF97zGgeWYJ9LuGW7SDxi) already exists.
+[2020-12-18 04:23:01 UTC] STATEMENT:  INSERT INTO "logger_xform" ("xls", "json", "description", "xml", "user_id", "require_auth", "shared", "shared_data", "downloadable", "allows_sms", "encrypted", "sms_id_string", "id_string", "title", "date_created", "date_modified", "last_submission_time", "has_start_time", "uuid", "instances_with_geopoints", "num_of_submissions", "has_kpi_hooks", "kpi_asset_uid") VALUES ('admin/xls/anF97zGgeWYJ9LuGW7SDxi_Kxf9py3.xls', '{"default_language": "default", "id_string": "anF97zGgeWYJ9LuGW7SDxi", "children": [{"name": "start", "type": "start"}, {"name": "end", "type": "end"}, {"children": [{"name": "a", "label": "a"}, {"name": "b", "label": "b"}], "name": "a", "label": "a", "bind": {"required": "false"}, "type": "select one"}, {"name": "hola", "label": "hola", "bind": {"required": "false"}, "type": "text"}, {"name": "__version__", "bind": {"calculate": "''vTzfBHCbBmBTM9KvC9v2DF''"}, "type": "calculate"}, {"control": {"bodyless": true}, "children": [{"name": "instanceID", "bind": {"readonly": "true()", "calculate": "concat(''uuid:'', uuid())"}, "type": "calculate"}], "name": "meta", "type": "group"}], "version": "vTzfBHCbBmBTM9KvC9v2DF", "type": "survey", "name": "anF97zGgeWYJ9LuGW7SDxi", "sms_keyword": "anF97zGgeWYJ9LuGW7SDxi", "title": "s"}', 's', '<?xml version="1.0" encoding="utf-8"?>
+	<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	  <h:head>
+	    <h:title>s</h:title>
+	    <model>
+	      <instance>
+	        <anF97zGgeWYJ9LuGW7SDxi id="anF97zGgeWYJ9LuGW7SDxi" version="vTzfBHCbBmBTM9KvC9v2DF">
+	          <formhub>
+	            <uuid/>
+	          </formhub>
+	          <start/>
+	          <end/>
+	          <a/>
+	          <hola/>
+	          <__version__/>
+	          <meta>
+	            <instanceID/>
+	          </meta>
+	        </anF97zGgeWYJ9LuGW7SDxi>
+	      </instance>
+	      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/anF97zGgeWYJ9LuGW7SDxi/start" type="dateTime"/>
+	      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/anF97zGgeWYJ9LuGW7SDxi/end" type="dateTime"/>
+	      <bind nodeset="/anF97zGgeWYJ9LuGW7SDxi/a" required="false()" type="select1"/>
+	      <bind nodeset="/anF97zGgeWYJ9LuGW7SDxi/hola" required="false()" type="string"/>
+	      <bind calculate="''vTzfBHCbBmBTM9KvC9v2DF''" nodeset="/anF97zGgeWYJ9LuGW7SDxi/__version__" type="string"/>
+	      <bind calculate="concat(''uuid:'', uuid())" nodeset="/anF97zGgeWYJ9LuGW7SDxi/meta/instanceID" readonly="true()" type="string"/>
+	      <bind calculate="''2a0d06b8c400491d84cd7a0ee18b45b0''" nodeset="/anF97zGgeWYJ9LuGW7SDxi/formhub/uuid" type="string"/>
+	    </model>
+	  </h:head>
+	  <h:body>
+	    <select1 ref="/anF97zGgeWYJ9LuGW7SDxi/a">
+	      <label>a</label>
+	      <item>
+	        <label>a</label>
+	        <value>a</value>
+	      </item>
+	      <item>
+	        <label>b</label>
+	        <value>b</value>
+	      </item>
+	    </select1>
+	    <input ref="/anF97zGgeWYJ9LuGW7SDxi/hola">
+	      <label>hola</label>
+	    </input>
+	  </h:body>
+	</h:html>
+	', 1, false, false, false, true, false, false, 'anF97zGgeWYJ9LuGW7SDxi', 'anF97zGgeWYJ9LuGW7SDxi', 's', '2020-12-18T04:23:01.411249+00:00'::timestamptz, '2020-12-18T04:23:01.411313+00:00'::timestamptz, NULL, true, '2a0d06b8c400491d84cd7a0ee18b45b0', false, 0, 0, NULL) RETURNING "logger_xform"."id"
+[2020-12-18 07:58:02 UTC] LOG:  received fast shutdown request
+[2020-12-18 07:58:02 UTC] LOG:  aborting any active transactions
+[2020-12-18 07:58:02 UTC] LOG:  autovacuum launcher shutting down
+[2020-12-18 07:58:02 UTC] LOG:  shutting down
+[2020-12-18 07:58:02 UTC] LOG:  database system is shut down

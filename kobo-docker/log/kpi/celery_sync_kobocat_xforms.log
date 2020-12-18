@@ -80,3 +80,9 @@
 [2020-12-17 08:12:08,753: WARNING/MainProcess] /opt/venv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
   warnings.warn('Using settings.DEBUG leads to a memory leak, never '
 [2020-12-17 08:12:08,753: INFO/MainProcess] sync_kobocat_xforms_worker@kpi ready.
+[2020-12-18 07:59:18,001: INFO/MainProcess] Connected to redis://:**@redis-main.kobo.private:6379/1
+[2020-12-18 07:59:18,016: INFO/MainProcess] mingle: searching for neighbors
+[2020-12-18 07:59:19,046: INFO/MainProcess] mingle: all alone
+[2020-12-18 07:59:19,067: WARNING/MainProcess] /opt/venv/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-12-18 07:59:19,067: INFO/MainProcess] sync_kobocat_xforms_worker@kpi ready.
